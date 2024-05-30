@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="https://dfrnc.com/logo.png" type="image/x-icon">
+
+  <meta http-equiv='cache-control' content='no-cache'>
+  <meta http-equiv='expires' content='0'>
+  <meta http-equiv='pragma' content='no-cache'>
+  <title>Blind Page</title>
+</head>
+
+<body class="blind-page">
+  <div id="close_popup" class="close_popup position-fixed top-0 start-0 h-100 w-100 z_index5">
+  </div>
+  <div class="btn_dots_pos position-fixed z_index5">
+    <nav class="nav__popup max-h-0 d-inline-flex flex-column position-absolute top-0 start-0">
+      <a aria-label="link with landing page" rel="no-referrer" href="/"><svg width="50" height="27" viewBox="0 0 50 27"
+          fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M0 13.5V27H6.9534C13.4229 27 15.6989 26.8819 16.5771 26.5106C16.7742 26.4094 17.2581 26.2575 17.6523 26.1562C19.5161 25.6331 21.7204 24.0806 22.8853 22.4775C23.8172 21.195 24.8029 18.8494 25.1075 17.2125C25.4122 15.5756 25.4122 11.4075 25.1075 9.7875C24.8925 8.62313 24.2115 6.63187 23.7455 5.82187C22.4014 3.40875 20.3226 1.755 17.4373 0.776249C15.4301 0.0843735 14.2652 -1.90735e-06 6.9534 -1.90735e-06H0V13.5ZM15.8423 6.96937C17.6702 7.77938 19.0681 9.16312 19.8029 10.8337C20.2509 11.8631 20.3405 12.285 20.3405 13.5C20.3405 15.4744 19.6953 16.9931 18.2258 18.4275C14.7312 21.8025 9.13978 21.3806 6.30824 17.5162C5.43011 16.3181 5.12545 15.2887 5.12545 13.5C5.12545 10.53 6.50538 8.38688 9.22939 7.0875C10.681 6.39562 11.4875 6.24375 13.1362 6.31125C14.2652 6.36187 14.767 6.49687 15.8423 6.96937Z"
+            fill="#fafafa" />
+          <path
+            d="M32.5262 8.3868C31.0029 8.77493 29.8738 9.56805 29.0136 10.8337C28.4222 11.6943 28.4043 11.7618 28.4043 13.5168C28.4043 15.3056 28.4043 15.3056 29.0853 16.2674C29.8918 17.4149 31.3075 18.3262 32.7054 18.6131C35.3756 19.1362 38.3864 17.4149 39.0853 14.9512C39.372 13.9387 39.1928 12.0318 38.7269 11.1712C38.2251 10.2431 37.1857 9.29805 36.1462 8.80868C35.3219 8.42055 33.2968 8.1843 32.5262 8.3868Z"
+            fill="#fafafa" />
+          <path
+            d="M45.3396 9.95622C43.4578 10.2937 42.293 11.6437 42.293 13.5C42.293 15.66 43.8342 17.0775 46.1639 17.0775C47.5618 17.0943 48.5833 16.5881 49.3718 15.5587C49.8557 14.8837 49.9095 14.6981 49.9095 13.5C49.9095 12.3018 49.8557 12.1162 49.3718 11.4412C48.4758 10.26 46.8808 9.66935 45.3396 9.95622Z"
+            fill="#fafafa" />
+        </svg></a>
+
+      <ul class="m-0 mt-3 pt-1 d-flex flex-column ps-0">
+        <li class="m-0 ps-0"><a href="#">About Us</a></li>
+        <li class="m-0 ps-0"><a href="#">Services</a></li>
+        <li class="m-0 ps-0"><a href="#">Blog</a></li>
+        <li class="m-0 ps-0"><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <svg id="icon__dots" style="cursor: pointer" class="position-relative icon_dots_svg z_index5" width="96" height="60"
+      viewBox="0 0 96 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="96" height="60" rx="30" fill="url(#paint0_linear_369_787)" />
+      <rect x="0.5" y="0.5" width="95" height="59" rx="29.5" stroke="white" stroke-opacity="0.21" />
+      <g clip-path="url(#clip0_369_787)">
+        <path
+          d="M22 30V45H29.2315C35.9599 45 38.3269 44.8687 39.2401 44.4562C39.4452 44.3438 39.9484 44.175 40.3584 44.0625C42.2968 43.4812 44.5892 41.7562 45.8007 39.975C46.7699 38.55 47.795 35.9437 48.1118 34.125C48.4287 32.3062 48.4287 27.675 48.1118 25.875C47.8882 24.5812 47.1799 22.3687 46.6953 21.4688C45.2975 18.7875 43.1355 16.95 40.1348 15.8625C38.0473 15.0937 36.8358 15 29.2315 15H22V30ZM38.476 22.7437C40.3771 23.6437 41.8308 25.1812 42.595 27.0375C43.0609 28.1812 43.1541 28.65 43.1541 30C43.1541 32.1937 42.4832 33.8812 40.9548 35.475C37.3204 39.225 31.5054 38.7562 28.5606 34.4625C27.6473 33.1312 27.3305 31.9875 27.3305 30C27.3305 26.7 28.7656 24.3187 31.5986 22.875C33.1082 22.1062 33.947 21.9375 35.6616 22.0125C36.8358 22.0687 37.3577 22.2188 38.476 22.7437Z"
+          fill="#fafafa" />
+        <path
+          d="M55.8278 24.3187C54.2435 24.75 53.0693 25.6312 52.1747 27.0375C51.5597 27.9937 51.541 28.0687 51.541 30.0187C51.541 32.0062 51.541 32.0062 52.2493 33.075C53.088 34.35 54.5604 35.3625 56.0141 35.6812C58.7912 36.2625 61.9224 34.35 62.6493 31.6125C62.9475 30.4875 62.7611 28.3687 62.2765 27.4125C61.7546 26.3812 60.6736 25.3312 59.5926 24.7875C58.7353 24.3562 56.6292 24.0937 55.8278 24.3187Z"
+          fill="#fafafa" />
+        <path
+          d="M69.1548 26.0624C67.1978 26.4374 65.9863 27.9374 65.9863 29.9999C65.9863 32.3999 67.5892 33.9749 70.0121 33.9749C71.4659 33.9936 72.5283 33.4311 73.3483 32.2874C73.8516 31.5374 73.9075 31.3311 73.9075 29.9999C73.9075 28.6686 73.8516 28.4624 73.3483 27.7124C72.4164 26.3999 70.7577 25.7436 69.1548 26.0624Z"
+          fill="#fafafa" />
+      </g>
+      <defs>
+        <linearGradient id="paint0_linear_369_787" x1="14.329" y1="-2.1845" x2="14.793" y2="62.896"
+          gradientUnits="userSpaceOnUse">
+          <stop stop-color="#0D161B" />
+          <stop offset="1" stop-color="#262E32" />
+        </linearGradient>
+        <clipPath id="clip0_369_787">
+          <rect width="52" height="30" fill="#fafafa" transform="translate(22 15)" />
+        </clipPath>
+      </defs>
+    </svg>
+  </div>
+  {{!-- {{>../../components/header/header.hbs}} --}}
+
+  {{!-- {{>img/test.svg}} --}}
+  <img src="./assets/img/secure-bg-ing.png" alt="" class="move-bg">
+
+  <section id="blind-animation-popup" class="firstS">
+    {{!-- <div class="blind-circle"></div> --}}
+    <div class="svg-block_popup  d-flex flex-column justify-content-center align-items-center vh-100 bg-white px-4">
+      {{!-- <img id="blind-image" class="max_w_custom_blind w-100" style="margin-bottom: 80px"
+        src="./assets/images/animation/webp/Frame 35954.webp" alt="d-dots-blind" /> --}}
+      <div id="blind-image" class="max_w_custom_blind w-100" style="margin-bottom: 80px">
+        {{>./img/logoBlind.svg}}
+      </div>
+      <div class="position_relative" id="cover-page">
+        <button style="opacity: 0" id="get-started" class="aniamtion_btn_start position_relative z_index5">
+          Start
+        </button>
+        <div id="cover-button" class="position_absolute center-position_absolute"></div>
+      </div>
+    </div>
+
+  </section>
+  <section class="how-work">
+    <div class="how-work_slider">
+      <div class="bt-group">
+        <div class="bt bt-left"></div>
+        <div class="bt bt-right"></div>
+      </div>
+      <div class="con">
+        <div class="swiper active s1">
+          <h2>Why Us?</h2>
+        </div>
+        <div class="swiper  active s2">
+          <h2>B.L.I.N.D.</h2>
+        </div>
+        <div class="swiper active s3">
+          <h2>Services</h2>
+        </div>
+      </div>
+    </div>
+    <div id="blind-tab" class="container">
+      <div class="mt-xl-3 line__first_tab mx-auto"></div>
+      <div class=" finger_print_tag">
+        <span class="circle position_absolute d-inline-block">
+          <svg class="services-tag-parent" width="122" height="123" viewBox="0 0 122 123" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <circle cx="60.9993" cy="61.504" r="59.4837" stroke="#21465C" stroke-width="2.34373"
+              stroke-dasharray="9.37 9.37" />
+          </svg></span>
+        <div class="circle_with_fingerprint d-flex justify-content-center align-items-center">
+          <img style="width: 80%" src="./assets/img/Group 127.png" alt="fingerprint" />
+        </div>
+      </div>
+      <div class="blind-dot"></div>
+      <div id="blind-tab-contentbox" class="mt-5"
+        style="translate: none; rotate: none; scale: none; filter: blur(0px); transform: translate(0px, 0px); opacity: 1; visibility: inherit;">
+        <h2 class="">How it works?</h2>
+        <div class="blind_text-block">
+          <p class="text-start">
+            An Homomorphic Encryption that features
+            <span>“Keyless Decryption ”</span> that merges the Processing and
+            the Decryption steps of Homomorphic encryption. The
+            <span class="fw_medium">BLIND</span> encrypts the information
+            using continuous and invert blest and functions that allows for
+            this scheme to perform the decryption in a timely and energy
+            efficient manner, while maintaining data precision.
+          </p>
+          <span class="layer_black d-inline-block"></span>
+        </div>
+      </div>
+    </div>
+    <div id="why-us-tab" class="container">
+      <div class="why-us-contentbox">
+        <p class="text-white text-start fw-normal pt-5 pt-sm-4 pt-md-3 pt-lg-0">
+          <span>Traditional cloud computing</span> often requires the
+          decryption of sensitive information before processing it. Making
+          them vul-ner able to second parties to use encrypted in puts for
+          unin-tended purposes. Therefore risks ser privacy.
+        </p>
+
+        <svg class="position_fixed satelite_image" width="111" height="166" viewBox="0 0 111 166" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_144_430)">
+            <path
+              d="M48.2879 61.9156C42.6436 63.8861 38.7025 67.8271 36.732 73.4715C35.8637 76.0432 35.7969 76.5107 35.7969 81.9213V87.6992H38.4688H41.1406V84.0922C41.1406 79.4832 41.6416 76.3104 42.6436 74.1061C43.7791 71.6012 46.1838 69.1965 48.7889 67.8939C50.8262 66.892 51.1936 66.8252 54.5 66.8252C57.5727 66.8252 58.2406 66.9254 59.8438 67.6936C62.5156 68.9627 64.9871 71.334 66.1895 73.7721C67.3584 76.2102 67.8594 79.1492 67.8594 84.0922V87.6992H70.5312H73.2031V81.9213C73.2031 76.5107 73.1363 76.0432 72.268 73.4715C70.2975 67.8605 66.323 63.8861 60.7121 61.9156C58.4076 61.1141 57.4725 60.9805 54.5 60.9805C51.5275 60.9805 50.5924 61.1141 48.2879 61.9156Z"
+              fill="#fafafa"></path>
+            <path
+              d="M50.9932 72.3025C50.2584 72.6365 49.1896 73.4381 48.5885 74.0393C46.7516 75.9764 46.4844 77.0785 46.4844 82.6895V87.6992H54.5H62.5156V82.5893C62.5156 78.3477 62.382 77.2789 61.8811 76.1768C61.1129 74.5402 59.4096 72.8703 57.773 72.2023C56.0363 71.4676 52.6631 71.5344 50.9932 72.3025Z"
+              fill="#fafafa"></path>
+            <path
+              d="M30.4531 109.074V125.105H54.5H78.5469V109.074V93.043H54.5H30.4531V109.074ZM57.1051 102.061C59.9773 103.797 60.3781 107.972 57.8732 110.21C57.2387 110.811 57.1719 111.212 57.1719 115.32V119.762H54.5H51.8281V115.32C51.8281 111.212 51.7613 110.811 51.1268 110.21C48.6219 107.972 49.0227 103.797 51.8949 102.061C53.3311 101.192 55.6689 101.192 57.1051 102.061Z"
+              fill="#fafafa"></path>
+            <path
+              d="M51.8276 131.785V135.793H35.1284C18.8633 135.793 18.3958 135.827 17.7612 136.461C17.1266 137.096 17.0932 137.563 17.0932 143.274C17.0932 149.253 17.0598 149.453 16.3918 149.654C15.2229 150.021 13.0186 152.225 12.384 153.661C11.5491 155.431 11.5491 158.905 12.384 160.675C14.5883 165.518 21.2012 166.854 25.209 163.213C27.0459 161.577 27.7807 159.84 27.7807 157.168C27.7807 155.765 27.5469 154.53 27.1461 153.661C26.5116 152.225 24.3073 150.021 23.1383 149.654C22.4704 149.453 22.437 149.219 22.437 145.278V141.137H37.1323H51.8276V145.278C51.8276 149.219 51.7942 149.453 51.1262 149.654C49.9573 150.021 47.753 152.225 47.1184 153.661C46.2834 155.431 46.2834 158.905 47.1184 160.675C48.3542 163.414 51.36 165.317 54.4995 165.317C57.6389 165.317 60.6448 163.414 61.8805 160.675C62.7155 158.905 62.7155 155.431 61.8805 153.661C61.2459 152.225 59.0417 150.021 57.8727 149.654C57.2047 149.453 57.1713 149.219 57.1713 145.278V141.137H71.8667H86.562V145.278C86.562 149.219 86.5286 149.453 85.8606 149.654C84.6917 150.021 82.4874 152.225 81.8528 153.661C81.452 154.53 81.2182 155.765 81.2182 157.168C81.2182 159.84 81.953 161.577 83.7899 163.213C86.896 166.019 91.5717 166.019 94.6778 163.213C95.4126 162.545 96.2809 161.41 96.6149 160.675C97.4499 158.905 97.4499 155.431 96.6149 153.661C95.9803 152.225 93.776 150.021 92.6071 149.654C91.9391 149.453 91.9057 149.253 91.9057 143.274C91.9057 137.563 91.8723 137.096 91.2377 136.461C90.6032 135.827 90.1356 135.793 73.8706 135.793H57.1713V131.785V127.778H54.4995H51.8276V131.785Z"
+              fill="#fafafa"></path>
+            <path class="animate_path_satelite_1 active"
+              d="M4.23434 37.1465C29.0158 6.79121 83.1982 8.61162 105.876 40.5704" stroke="#F2F7F9"
+              stroke-width="7.87837" stroke-miterlimit="10" stroke-linecap="round"></path>
+            <path class="animate_path_satelite_2 active"
+              d="M15.3744 49.0605C34.031 24.2937 76.9213 25.6672 93.9624 51.7097" stroke="#F2F7F9"
+              stroke-width="7.87837" stroke-miterlimit="10" stroke-linecap="round"></path>
+            <path class="animate_path_satelite_3 active"
+              d="M26.5926 61.0625C42.0375 41.3877 68.9321 40.8667 81.9631 62.9221" stroke="#F2F7F9"
+              stroke-width="7.87837" stroke-miterlimit="10" stroke-linecap="round"></path>
+          </g>
+          <defs>
+            <clipPath id="clip0_144_430">
+              <rect width="110.071" height="165.509" fill="#fafafa" transform="translate(0 0.0183105)"></rect>
+            </clipPath>
+          </defs>
+        </svg>
+      </div>
+    </div>
+    <div id="services-tab" class="container">
+      <div class="serviceDesktop">
+        {{>img/serviceDesktop.svg}}
+        <div class="serviceDesktop-content">
+          <p>Cloud Services and Enhancement of Privacy in Cloud Computing</p>
+          <p>Real-Time Computing</p>
+          <p>VPN<br>Services</p>
+          <p>Personalized and Corporate Services</p>
+        </div>
+      </div>
+      <div class="serviceMobile">
+        {{!-- <div class="serviceMobile-content">
+          <p>Cloud Services and Enhancement of Privacy in Cloud Computing</p>
+          <p>Real-Time Computing</p>
+          <p>VPN<br>Services</p>
+          <p>Personalized and Corporate Services</p>
+        </div> --}}
+        {{>img/serviceMobile.svg}}
+      </div>
+
+    </div>
+  </section>
+  <section id="mt_selecter" class="py-5 secure_bg_img position-relative min-vh-100">
+    <div class="position-absolute top-0 start-0 w-100 h-100"></div>
+    <div class="bottom_overlay position-absolute bottom-0 start-0 w-100 h-100"></div>
+    <div class="container py-4 py-sm-5 z_index2 position-relative secure_img_size_parent">
+      <div class="secure-button">
+        <div
+          class="scale button_toggle_verson transition_03s d-inline-flex justify-content-between mx-auto text-center align-items-center position-relative cursor_pointer">
+          <span class="position-absolute transition_03s"></span>
+          <button class="active" id="new-v" type="button">New version</button>
+          <button id="old-v" type="button">Old version</button>
+        </div>
+      </div>
+      <div class="svg-block row justify-content-center pt-lg-3 mt-lg-1">
+        <div class="secure-txt">
+          <h2 class="scale fw-bold font_4xl clr_light_white mb-5 mb-lg-0 text-center mb-xl-5  pb-4 pt-4 pt-md-5">
+            Secure Your Data
+          </h2>
+          <div id="old-semoulation" class="old-svg scaleNozoom">
+            {{>./img/oldVersion.svg}}
+          </div>
+          <div id="new-semoulation" class="new-svg scaleNozoom">
+            {{>./img/newVersion.svg}}
+          </div>
+          <div class="btnSecure scaleNozoom">
+            <a href="#simulation" class=" d-inline-block   fw-semibold clr_black common_button  position-absolute"
+              id="secureDataBtn">
+              <span class="d-block mb_n_1">Start the Simulation</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <section class="py-5 position-relative" id="qna">
+    {{!-- <div id="simulation" class="qna-bg position-absolute top-0 backgroud_blur z_index1" style="left: -9%;"></div>
+    --}}
+    <div class="position-absolute bottom-0 backgroud_blur_two z_index1"></div>
+    <div class="container py-6 position-relative z_index3 py-xl-4">
+      <div class="qna-block">
+        <div class="qna-block_left">
+          <div class="qna-block_left-text scaleNozoom text_box bg-white p-4"
+            style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1; visibility: inherit;">
+            <h3 class="rounded_16 clr_light_gray font_xl mb-2">
+              Understanding B.L.I.N.D. </h3>
+            <p class="clr_light_gray font_base fw-normal leading_150">
+              Navigate the complexities of data security with ease. Our B.L.I.N.D. technology ensures
+              your digital
+              interactions are private, secure, and completely under your control.
+            </p>
+          </div>
+          <div class="qna-block_left-bottom">
+            <div class="scaleNozoom col-md-7"
+              style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1; visibility: inherit;">
+              <div class="qns_box overflow-hidden h-100">
+                <div class="light_part bg-white">
+                  <h2 class="font_xl fw_medium mb-0">Questions? Let's dive in</h2>
+                </div>
+                <div class="dark_part">
+                  <div class="check__box_selecter d-flex">
+                    <span>
+                      <input class="me-2 position-relative" type="checkbox" id="1_q">
+                    </span>
+                    <label for="1_q">How does B.L.I.N.D. enhance privacy?</label>
+                  </div>
+                  <div class="check__box_selecter d-flex pt-1 mt-2">
+                    <span>
+                      <input class="me-2 position-relative" type="checkbox" id="2_q">
+                    </span>
+                    <label for="2_q">What data can I protect with B.L.I.N.D.?</label>
+                  </div>
+                  <div class="check__box_selecter d-flex pt-1 mt-2">
+                    <div>
+                      <input class="me-2 position-relative" type="checkbox" id="3_q">
+                    </div>
+                    <label for="3_q">Is B.L.I.N.D. user-friendly?</label>
+                  </div>
+                  <div class="check__box_selecter d-flex pt-1 mt-2">
+                    <span>
+                      <input class="me-2 position-relative" type="checkbox" id="4_q">
+                    </span>
+                    <label for="4_q">How secure is B.L.I.N.D. against threats?</label>
+                  </div>
+                  <div class="check__box_selecter d-flex pt-1 mt-2">
+                    <span>
+                      <input class="me-2 position-relative" type="checkbox" id="5_q">
+                    </span>
+                    <label for="5_q">Can B.L.I.N.D. handle large-scale data?</label>
+                  </div>
+                  <div class="check__box_selecter d-flex pt-1 mt-2">
+                    <span>
+                      <input class="me-2 position-relative" type="checkbox" id="6_q">
+                    </span>
+                    <label for="6_q">What if I have specific security needs?</label>
+                  </div>
+                  <div class="check__box_selecter d-flex pt-1 mt-2">
+                    <span>
+                      <input class="me-2 position-relative" type="checkbox" id="7_q">
+                    </span>
+                    <label for="7_q">Where can I see B.L.I.N.D. in action?</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="scaleNozoom3 qna-block_left-bottom-right"
+              style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1; visibility: inherit;">
+              <div
+                class="dark_part_range ms-xl-1 qns_box overflow-hidden h-100 text-white d-flex flex-column justify-content-between">
+                <div>
+                  <p class="fw-normal font_lg leaing_150 mb-0">
+                    Select a range
+                  </p>
+                  <div class="check__box_selecter d-flex justify-content-between pe-xl-4 pt-1 mt-2 align-items-center">
+                    <div class="rating d-flex flex-column justify-content-between flex-row-reverse">
+                      <input type="radio" name="rating" value="5" id="5">
+                      <label for="5" class="ms-4"></label>
+                      <input type="radio" name="rating" value="4" id="4">
+                      <label for="4" class="ms-4"></label>
+                      <input type="radio" name="rating" value="3" id="3">
+                      <label for="3" class="ms-4"></label>
+                      <input type="radio" name="rating" value="2" id="2">
+                      <label for="2" class="ms-4"></label>
+                      <input type="radio" name="rating" value="1" id="1">
+                      <label for="1"></label>
+                    </div>
+                  </div>
+
+                  <p class="fw-normal font_lg leaing_150 mt-4 pt-sm-3">
+                    Select age
+                  </p>
+                  <div class="range-slider">
+                    <div id="tooltip" style="left: calc(50% + 0px);"><span>3</span></div>
+                    <input id="range" type="range" step="1" value="3" min="1" max="5">
+                    <div class="range-number">
+                      <span>1</span><span>5</span>
+                    </div>
+                  </div>
+                </div>
+                <svg class="mx-auto pb-1" width="107" height="66" viewBox="0 0 107 66" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <rect x="0.599609" width="105.6" height="66" rx="33" fill="url(#paint0_linear_890_217)"></rect>
+                  <rect x="1.14961" y="0.55" width="104.5" height="64.9" rx="32.45" stroke="white" stroke-opacity="0.21"
+                    stroke-width="1.1"></rect>
+                  <g clip-path="url(#clip0_890_217)">
+                    <path
+                      d="M24.8008 33V49.5H32.7555C40.1566 49.5 42.7604 49.3556 43.7649 48.9019C43.9905 48.7781 44.544 48.5925 44.995 48.4688C47.1272 47.8294 49.649 45.9319 50.9816 43.9725C52.0477 42.405 53.1753 39.5381 53.5238 37.5375C53.8723 35.5369 53.8723 30.4425 53.5238 28.4625C53.2778 27.0394 52.4987 24.6056 51.9657 23.6156C50.428 20.6662 48.0498 18.645 44.749 17.4487C42.4528 16.6031 41.1202 16.5 32.7555 16.5H24.8008V33ZM42.9244 25.0181C45.0155 26.0081 46.6147 27.6994 47.4553 29.7412C47.9678 30.9994 48.0703 31.515 48.0703 33C48.0703 35.4131 47.3323 37.2694 45.6511 39.0225C41.6533 43.1475 35.2567 42.6319 32.0174 37.9087C31.0128 36.4444 30.6643 35.1862 30.6643 33C30.6643 29.37 32.2429 26.7506 35.3592 25.1625C37.0198 24.3169 37.9424 24.1312 39.8286 24.2137C41.1202 24.2756 41.6943 24.4406 42.9244 25.0181Z"
+                      fill="#fafafa"></path>
+                    <path
+                      d="M62.0123 26.7506C60.2696 27.225 58.978 28.1944 57.9939 29.7413C57.3174 30.7931 57.2969 30.8756 57.2969 33.0206C57.2969 35.2069 57.2969 35.2069 58.0759 36.3825C58.9985 37.785 60.6182 38.8988 62.2173 39.2494C65.2721 39.8888 68.7164 37.785 69.5159 34.7738C69.844 33.5363 69.639 31.2056 69.1059 30.1538C68.5319 29.0194 67.3428 27.8644 66.1537 27.2663C65.2106 26.7919 62.8939 26.5031 62.0123 26.7506Z"
+                      fill="#fafafa"></path>
+                    <path
+                      d="M76.6709 28.6688C74.5182 29.0813 73.1855 30.7313 73.1855 33C73.1855 35.64 74.9487 37.3725 77.6139 37.3725C79.2131 37.3932 80.3817 36.7744 81.2838 35.5163C81.8373 34.6913 81.8988 34.4644 81.8988 33C81.8988 31.5357 81.8373 31.3088 81.2838 30.4838C80.2587 29.04 78.434 28.3182 76.6709 28.6688Z"
+                      fill="#fafafa"></path>
+                  </g>
+                  <defs>
+                    <linearGradient id="paint0_linear_890_217" x1="16.3615" y1="-2.40295" x2="16.8719" y2="69.1856"
+                      gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#0D161B"></stop>
+                      <stop offset="1" stop-color="#262E32"></stop>
+                    </linearGradient>
+                    <clipPath id="clip0_890_217">
+                      <rect width="57.2" height="33" fill="#fafafa" transform="translate(24.8008 16.5)"></rect>
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="scaleNozoom d-flex justify-content-center align-items-center justify-content-lg-start"
+            style="margin-top:24px; cursor:pointer;">
+            <button class="submit-thank font_base fw-semibold clr_black common_button transition_03s mt-4"
+              id="changeOpacityBtn">
+              <span class="d-block mb_n_1">Submit</span>
+            </button>
+          </div>
+        </div>
+        <div class="qna-block_right">
+          <img class="position-move1" style="" src="./assets/img/background-net.svg" alt="bg-net">
+          <div class="qna-block_right-finger">
+            <svg data-content="changed" preserveAspectRatio=""
+              class="position-move1 position-relative z_index3 svg_fingerprint" id="fingerMove"
+              xmlns="http://www.w3.org/2000/svg" width="218" height="228" viewBox="0 0 218 228" style="">
+              <path d="M77.81,221.73s40.12-27,30.63-112.33" fill="none" stroke="#fff" stroke-linecap="round"
+                stroke-miterlimit="10" stroke-width="5.95" style="stroke-dashoffset: 0px; stroke-dasharray: 122;">
+              </path>
+              <path d="M48.62,207.88s16.06-19,18.24-28.46" fill="none" stroke="#fff" stroke-linecap="round"
+                stroke-miterlimit="10" stroke-width="5.95" style="stroke-dashoffset: 4px; stroke-dasharray: 35;"></path>
+              <path d="M70.55,162.65s4.38-43.76,4.38-57.62,8.75-26.26,22.62-29.91" fill="none" stroke="#fff"
+                stroke-linecap="round" stroke-miterlimit="10" stroke-width="5.95"
+                style="stroke-dashoffset: 0px; stroke-dasharray: 99;"></path>
+              <path d="M109.9,75.12s34.3-3.64,34.66,43.77" fill="none" stroke="#fff" stroke-linecap="round"
+                stroke-miterlimit="10" stroke-width="5.95" style="stroke-dashoffset: 30px; stroke-dasharray: 64;">
+              </path>
+              <path d="M144.57,130.46s1.62,57.72-22.72,91.27" fill="none" stroke="#fff" stroke-linecap="round"
+                stroke-miterlimit="10" stroke-width="5.95" style="stroke-dashoffset: 0px; stroke-dasharray: 96;"></path>
+              <path d="M166.07,211.52s15.32-25.53,13.86-85.34" fill="none" stroke="#fff" stroke-linecap="round"
+                stroke-miterlimit="10" stroke-width="5.95" style="stroke-dashoffset: 84px; stroke-dasharray: 88;">
+              </path>
+              <path d="M180,109.4C178.79,39.29,107.6,27,72,49.59" fill="none" stroke="#fff" stroke-linecap="round"
+                stroke-miterlimit="10" stroke-width="5.95" style="stroke-dashoffset: 0px; stroke-dasharray: 152;">
+              </path>
+              <path d="M59.59,60.54s-25.53,19-20.43,67.85" fill="none" stroke="#fff" stroke-linecap="round"
+                stroke-miterlimit="10" stroke-width="5.95" style="stroke-dashoffset: 0px; stroke-dasharray: 75;"></path>
+              <path d="M38.48,142s2.9,22.83-16.08,37.42" fill="none" stroke="#fff" stroke-linecap="round"
+                stroke-miterlimit="10" stroke-width="5.95" style="stroke-dashoffset: 1px; stroke-dasharray: 43;"></path>
+              <path d="M3.42,144.41s-4-50,13-83.87" fill="none" stroke="#fff" stroke-linecap="round"
+                stroke-miterlimit="10" stroke-width="5.95" style="stroke-dashoffset: 0px; stroke-dasharray: 87;"></path>
+              <path d="M22.4,48.14c19.7-53.47,143.42-68.3,176.49,5.09" fill="none" stroke="#fff" stroke-linecap="round"
+                stroke-miterlimit="10" stroke-width="5.95" style="stroke-dashoffset: 0px; stroke-dasharray: 213;">
+              </path>
+              <path d="M204,65.64c8,22.07,11.82,53.39,9.48,81" fill="none" stroke="#fff" stroke-linecap="round"
+                stroke-miterlimit="10" stroke-width="5.95" style="stroke-dashoffset: 0px; stroke-dasharray: 83;"></path>
+              <path d="M12.53,165.56s9-2.48,9.87-46.67c.68-35,11.88-104.53,103.6-96.81" fill="none" stroke="#fff"
+                stroke-linecap="round" stroke-miterlimit="10" stroke-width="5.95"
+                style="stroke-dashoffset: 60px; stroke-dasharray: 214;"></path>
+              <path d="M140.54,27s79.51,19,53.25,156.08" fill="none" stroke="#fff" stroke-linecap="round"
+                stroke-miterlimit="10" stroke-width="5.95" style="stroke-dashoffset: 150px; stroke-dasharray: 181;">
+              </path>
+              <path d="M33.75,193.65s16.59-15,20.11-28.11,3.9-56.16,3.9-56.16" fill="none" stroke="#fff"
+                stroke-linecap="round" stroke-miterlimit="10" stroke-width="5.95"
+                style="stroke-dashoffset: 61px; stroke-dasharray: 92;"></path>
+              <path d="M59.59,93.38c10-37,61.31-47.41,90.94-18.1" fill="none" stroke="#fff" stroke-linecap="round"
+                stroke-miterlimit="10" stroke-width="5.95" style="stroke-dashoffset: 0px; stroke-dasharray: 112;">
+              </path>
+              <path d="M158.05,87.52s8,19.69,2.91,68.54" fill="none" stroke="#fff" stroke-linecap="round"
+                stroke-miterlimit="10" stroke-width="5.95" style="stroke-dashoffset: 0px; stroke-dasharray: 70;"></path>
+              <path d="M158.05,176.1s-8.75,39.07-17.51,45.63" fill="none" stroke="#fff" stroke-linecap="round"
+                stroke-miterlimit="10" stroke-width="5.95" style="stroke-dashoffset: 0px; stroke-dasharray: 50;"></path>
+              <path d="M97.51,224.32a101.27,101.27,0,0,0,19.69-36.14" fill="none" stroke="#fff" stroke-linecap="round"
+                stroke-miterlimit="10" stroke-width="5.95" style="stroke-dashoffset: 0px; stroke-dasharray: 42;"></path>
+              <path d="M121.84,172.36S129.7,118.9,126,105C121.84,83,93.36,84.86,93.85,102.48l.46,24.14" fill="none"
+                stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="5.95"
+                style="stroke-dashoffset: 0px; stroke-dasharray: 141;"></path>
+              <path d="M93.86,142s3.21,43.26-30.49,69.51" fill="none" stroke="#fff" stroke-linecap="round"
+                stroke-miterlimit="10" stroke-width="5.95" style="stroke-dashoffset: 0px; stroke-dasharray: 80;"></path>
+            </svg>
+          </div>
+          <div id="progress_bar" class="px-5 pb-4">
+            <div class="progress_bar-block" style="max-width: 250px">
+              <div class="bar bar_1">
+                <span data-amoutnt="94,890" data-text="Stat" data-height="94,890" class="d-inline-block">
+                </span>
+              </div>
+              <div class="bar bar_2">
+                <span data-amoutnt2="44,56" data-text="Stat" data-height="94,890" class="d-inline-block">
+                </span>
+              </div>
+              <div class="bar bar_3">
+                <span data-amoutnt3="1,294,890" data-text="Stat" data-height="94,890" class="d-inline-block">
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="thankyou_bg w-full d-flex align-items-center justify-content-center flex-column d-none z_index0"
+      id="elementToChangeOpacity">
+      <h2 class="thank_you_heading font_6xl text-white text-center mb-3">
+        Thank You
+      </h2>
+      <p class="thank_you_para font_xl text-center mb-4 mx-auto">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+        nonummy nibh euismod tincidunt ut laoree dolore gna aliquam erat
+        volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+      </p>
+      <div class="thank-btn">
+        <a href="/" aria-label="Link To Homepage" rel="no-referrer"
+          class="font_base fw-semibold clr_black common_button transition_03s mt-3">
+          Back to homepage
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg_light_gray">
+    <div class="container d-flex align-items-center justify-content-between flex-column flex-sm-row py-4">
+      <a href="/">
+        <img src="./assets/images/svg/footer_logo.svg" alt="footer_logo" />
+      </a>
+      <div class="d-flex align-items-center gap-3 gap-sm-5 mt-3 mt-sm-0">
+        <a class="fw-normal font_sm text-white mb-0 links_hover transition_03s position-relative" href="/">
+          Home
+        </a>
+        <a class="fw-normal font_sm text-white opacity_07 mb-0 links_hover transition_03s position-relative"
+          href="#about-us">
+          About Us
+        </a>
+        <a class="fw-normal font_sm text-white opacity_07 mb-0 links_hover transition_03s position-relative"
+          href="#services">
+          Services
+        </a>
+        <a class="fw-normal font_sm text-white opacity_07 mb-0 links_hover transition_03s position-relative"
+          href="#blog">
+          Blog
+        </a>
+      </div>
+    </div>
+    <div class="border_top py-2">
+      <div class="container py-1">
+        <div class="d-sm-flex justify-content-between align-items-center">
+          <p class="fw-normal font_base clr_dark_white opacity_07 mb-0 text-center text-md-start">
+            Copyright ©
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            D.Dots, All Right Reserved
+          </p>
+          <div class="gap-2 d-flex justify-content-center justify-content-md-start">
+            <a href="#"
+              class="fw-normal font_base clr_dark_white opacity_07 mb-0 text-center text-md-start mt-1 mt-md-0 footer_privacy_condition_hover transition_03s">
+              Privacy Policy,
+            </a>
+            <a href="#"
+              class="fw-normal font_base clr_dark_white opacity_07 mb-0 text-center text-md-start mt-1 mt-md-0 footer_privacy_condition_hover transition_03s">
+              Terms & Conditions
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
