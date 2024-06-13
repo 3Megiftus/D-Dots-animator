@@ -12,7 +12,17 @@
   <meta http-equiv='expires' content='0'>
   <meta http-equiv='pragma' content='no-cache'>
   <title>Blind Page</title>
-<script defer src="assets/js/blind.js"></script><link href="assets/css/blind.css" rel="stylesheet"></head>
+  <script defer src="assets/js/blind.js"></script><link href="assets/css/blind.css" rel="stylesheet">
+  <style>
+    .customStartButton{
+      width: 248px;
+      padding: 8px 16px !important;
+      font-size: 28px !important;
+    }
+  </style>
+
+</head>
+
 
 <body class="blind-page">
   <div id="close_popup" class="close_popup position-fixed top-0 start-0 h-100 w-100 z_index5">
@@ -119,7 +129,7 @@
         </svg>
       </div>
       <div class="position_relative" id="cover-page">
-        <button style="opacity: 0" id="get-started" class="aniamtion_btn_start position_relative z_index5">
+        <button style="opacity: 0" id="get-started" class="aniamtion_btn_start position_relative z_index5 customStartButton">
           Start
         </button>
         <div id="cover-button" class="position_absolute center-position_absolute"></div>
