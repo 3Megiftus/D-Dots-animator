@@ -1458,9 +1458,9 @@
           </p>
           <form
             class="paralax-effect_center4 btn-width d-flex align-items-center justify-content-between email_form  mx-auto mt-3 mt-md-4">
-            <input class="font_base fw-normal clr_light_white w-100 ps-3 ps-md-4 pe-2 bg-transparent border-0"
+            <input id="EmailInput" class="font_base fw-normal clr_light_white w-100 ps-3 ps-md-4 pe-2 bg-transparent border-0"
               type="email" placeholder="Your Email Here..." required />
-            <button class="font_base fw-semibold clr_black margin_3 common_button transition_03s" type="submit">
+            <button id="sendAnEmail" onclick="onSendEmail()" class="font_base fw-semibold clr_black margin_3 common_button transition_03s">
               <span class="d-block mb_n_1">Submit</span>
             </button>
           </form>
@@ -1703,7 +1703,7 @@
                 class="fw-normal font_base clr_dark_white opacity_07 mb-0 text-center text-md-start mt-1 mt-sm-2 mt-md-0 footer_privacy_condition_hover transition_03s">
                 Privacy Policy,
               </a>
-              <a href="#"
+              <a href="assets/legal/TERMS AND CONDITIONS.pdf" target="_blank"
                 class="fw-normal font_base clr_dark_white opacity_07 mb-0 text-center text-md-start mt-1 mt-sm-2 mt-md-0 footer_privacy_condition_hover transition_03s">
                 Terms & Conditions
               </a>
@@ -1903,6 +1903,19 @@
       },
     },
   });
+</script>
+<script>
+  const getEmail = () =>{
+    return document.getElementById('EmailInput').value 
+}
+const onSendEmail = () =>{
+    const email = getEmail()
+    const ddotslabEmail = 'support@ddotslab.com'
+    if(email){
+      window.open(`mailto:${ddotslabEmail}?body=I'm interesting about your product my email is: ${email}`, '_blank');
+    }
+}
+
 </script>
 
 </html>
