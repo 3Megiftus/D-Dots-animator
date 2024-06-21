@@ -1104,10 +1104,10 @@
               <img src="https://img.icons8.com/ios-filled/50/ffffff/language.png" alt="Change Language">
             </button>
           </div>
-          <div class="video_border position-absolute h-100 w-100 top-0 start-0 rounded_custom"></div>
-          <img style="background-color: white; border-radius: 9999px" id="playVideo"
+          <!-- <div class="video_border position-absolute h-100 w-100 top-0 start-0 rounded_custom"></div> -->
+          <!-- <img style="background-color: white; border-radius: 9999px" id="playVideo"
             class="position-absolute top-50 start-50 translate-middle cursor_pointer"
-            src="./assets/images/svg/video_play_icon.svg" alt="play-icon" />
+            src="./assets/images/svg/video_play_icon.svg" alt="play-icon" /> -->
         </div>
         <!-- BACKGROUND TOP SHADOW LARGE HEIGHT  -->
         <!-- BACKGROUND TOP SHADOW SMALL HEIGHT  -->
@@ -2245,13 +2245,12 @@
 
 </script>
 <script>
-
   const videos = {
-    espanol: '2Vggxts5',
+    espanol: '-t16djg0r3Y',
     ingles: '2Vggxts5Dak'
   };
 
-  let currentVideo = 'espanol';
+  let currentVideo = 'ingles';
   let player;
   let isPlaying = false;
 
@@ -2294,21 +2293,16 @@
   }
 
   function onPlayerReady(event) {
-    event.target.playVideo();
-    isPlaying = true;
-    document.getElementById('playPauseIcon').src = 'https://img.icons8.com/ios-filled/50/ffffff/pause.png';
+    isPlaying = false;
   }
 
   function onPlayerStateChange(event) {
     if (event.data == YT.PlayerState.ENDED) {
       isPlaying = false;
-      document.getElementById('playPauseIcon').src = 'https://img.icons8.com/ios-filled/50/ffffff/play.png';
     } else if (event.data == YT.PlayerState.PLAYING) {
       isPlaying = true;
-      document.getElementById('playPauseIcon').src = 'https://img.icons8.com/ios-filled/50/ffffff/pause.png';
     } else if (event.data == YT.PlayerState.PAUSED) {
       isPlaying = false;
-      document.getElementById('playPauseIcon').src = 'https://img.icons8.com/ios-filled/50/ffffff/play.png';
     }
   }
 
@@ -2321,12 +2315,9 @@
     changeVideo(videos[currentVideo]);
   });
 
-  document.getElementById('playPauseBtn').addEventListener('click', playPauseVideo);
-
   document.getElementById('playVideo').addEventListener('click', () => {
     player.playVideo();
     isPlaying = true;
-    document.getElementById('playPauseIcon').src = 'https://img.icons8.com/ios-filled/50/ffffff/pause.png';
     document.getElementById('playVideo').style.display = 'none';
   });
 </script>
