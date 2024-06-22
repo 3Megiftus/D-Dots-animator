@@ -4099,7 +4099,7 @@ html {
     gap: 12px
 }
 
-.common_button {
+/* .common_button {
     background-color: var(--light-white);
     border: 1px solid transparent;
     border-radius: 34px;
@@ -4114,7 +4114,27 @@ html {
     color: var(--white) !important;
     -webkit-transition: all .3s ease-in-out !important;
     transition: all .3s ease-in-out !important
+} */
+
+.common_button {
+    background-color: var(--light-white);
+    border: 1px solid transparent;
+    border-radius: 34px;
+    padding: 14px 32px;
+    -webkit-transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
 }
+
+.common_button:hover {
+    background-color: #010101;
+    border: 1px solid #fff;
+    -webkit-box-shadow: inset 0 100px 0 #11222c;
+    box-shadow: inset 0 100px 0 #11222c;
+    color: var(--white) !important;
+    -webkit-transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.3s ease-in-out !important;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.3s ease-in-out !important;
+}
+
 
 .z_index0 {
     z-index: 0
