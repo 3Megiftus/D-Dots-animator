@@ -65,7 +65,7 @@ body {
 }
 
 .video-container {
-    max-width: 1140px
+    max-width: 100%
 }
 
 .video-container .ipad_video_border {
@@ -4731,3 +4731,6 @@ span div {
         height: 111% !important
     }
 }
+
+/* Responsive video */
+

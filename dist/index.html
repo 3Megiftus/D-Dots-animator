@@ -20,6 +20,76 @@
   <link href="assets/css/index.css" rel="stylesheet">
 </head>
 
+<style>
+  .video-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0;
+  width: 100%;
+}
+
+.ipad_video_border {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  height: 0;
+  padding-bottom: 56.25%;
+  background: black;
+}
+
+.ipad_video_border iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.custom-controls {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.custom-button {
+  background-color: transparent;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.custom-button img {
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 768px) {
+  .video-container {
+    padding: 3rem 0;
+  }
+
+  .ipad_video_border {
+    max-width: 100%;
+    padding-bottom: 56.25%;
+  }
+}
+
+@media (max-width: 480px) {
+  .video-container {
+    padding: 2rem 0;
+  }
+
+  .ipad_video_border {
+    max-width: 100%;
+    padding-bottom: 56.25%;
+  }
+}
+
+</style>
+
 <body data-barba="wrapper" class="pb-5 pb-xl-0 home-page">
   <div class="load-container">
     <div class="loading-screen"></div>
@@ -1077,7 +1147,7 @@
     </section>
     <!-- ================================== VIDEO SECTION HERE ================================ -->
     <section class="position-relative py-md-5">
-      <img src="./assets/images/png/secure-bg-ing.png" alt="" class="video-bg">
+      <!-- <img src="./assets/images/png/secure-bg-ing.png" alt="" class="video-bg"> -->
 
       <!-- <div
         class="video-container  mx-auto d-flex justify-content-center align-items-center py-5 position-relative z_index5">
@@ -1092,28 +1162,23 @@
             src="./assets/images/svg/video_play_icon.svg" alt="play-icon" />
         </div>
       </div> -->
-      <div
-        class="video-container mx-auto d-flex justify-content-center align-items-center py-5 position-relative z_index5">
+      <div class="video-container mx-auto d-flex justify-content-center align-items-center py-5 position-relative z_index5">
         <div class="ipad_video_border rounded-4 sm:my-5 position-relative z_index2">
-          <div id="player"></div>
+          <iframe id="player" frameborder="0" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" title="D Dots - Where security meets freedom" src="https://www.youtube.com/embed/2Vggxts5Dak?modestbranding=1&amp;rel=0&amp;iv_load_policy=3&amp;showinfo=0&amp;enablejsapi=1&amp;origin=http%3A%2F%2F127.0.0.1%3A5500&amp;widgetid=1"></iframe>
           <div class="custom-controls">
-            <!-- <button id="playPauseBtn" class="custom-button">
-              <img src="https://img.icons8.com/ios-filled/50/ffffff/play.png" id="playPauseIcon" alt="Play/Pause">
-            </button> -->
             <button id="changeVideoBtn" class="custom-button">
               <img src="https://img.icons8.com/ios-filled/50/ffffff/language.png" alt="Change Language">
             </button>
           </div>
-          <!-- <div class="video_border position-absolute h-100 w-100 top-0 start-0 rounded_custom"></div> -->
-          <!-- <img style="background-color: white; border-radius: 9999px" id="playVideo"
-            class="position-absolute top-50 start-50 translate-middle cursor_pointer"
-            src="./assets/images/svg/video_play_icon.svg" alt="play-icon" /> -->
         </div>
-        <!-- BACKGROUND TOP SHADOW LARGE HEIGHT  -->
-        <!-- BACKGROUND TOP SHADOW SMALL HEIGHT  -->
-        <!-- BACKGROUND BOTTOM SHADOW LARGE HEIGHT  -->
-        <!-- BACKGROUND BOTTOM SHADOW SMALL HEIGHT  -->
+      </div>
+
+      <!-- BACKGROUND TOP SHADOW LARGE HEIGHT  -->
+      <!-- BACKGROUND TOP SHADOW SMALL HEIGHT  -->
+      <!-- BACKGROUND BOTTOM SHADOW LARGE HEIGHT  -->
+      <!-- BACKGROUND BOTTOM SHADOW SMALL HEIGHT  -->
     </section>
+
     <!-- ==================================== APPLICATION BENEFITS SECTION ============================= -->
     <section class="py-5 position-relative aplication-block">
       <!-- Overlays for top section -->
