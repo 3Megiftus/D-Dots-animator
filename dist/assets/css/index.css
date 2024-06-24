@@ -2729,7 +2729,7 @@ input[type=checkbox] {
 }
 
 .social_icon_position {
-    background-color: #0d161b;
+    /* background-color: #0d161b; */
     bottom: 0 !important;
     left: 50% !important;
     -webkit-transform: translateX(-50%);
