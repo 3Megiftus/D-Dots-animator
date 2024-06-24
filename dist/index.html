@@ -1157,11 +1157,11 @@
       <div
         class="video-container mx-auto d-flex justify-content-center align-items-center py-5 position-relative z_index5">
         <div class="ipad_video_border rounded-4 sm:my-5 position-relative z_index2">
-          <iframe id="player" frameborder="0" allowfullscreen
+          <iframe id="player" frameborder="0" allowfullscreen id="myVideo"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin" title="D Dots - Where security meets freedom"
             src="https://www.youtube.com/embed/2Vggxts5Dak?modestbranding=1&amp;rel=0&amp;iv_load_policy=3&amp;showinfo=0&amp;enablejsapi=1&amp;origin=http%3A%2F%2F127.0.0.1%3A5500&amp;widgetid=1"></iframe>
-          <div class="custom-controls">
+          <div class="custom-controls" id="playVideo">
             <button id="changeVideoBtn" class="custom-button">
               <img src="https://img.icons8.com/ios-filled/50/ffffff/language.png" alt="Change Language">
             </button>
@@ -2381,5 +2381,22 @@
     document.getElementById('playVideo').style.display = 'none';
   });
 </script>
+<!-- Fix back to top logic -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+      var backToTopBtn = document.getElementById('back_to_top');
 
+      window.addEventListener('scroll', function () {
+          if (window.pageYOffset > 300) {
+              backToTopBtn.style.display = 'block';
+          } else {
+              backToTopBtn.style.display = 'none';
+          }
+      });
+
+      backToTopBtn.addEventListener('click', function () {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+  });
+</script>
 </html>
