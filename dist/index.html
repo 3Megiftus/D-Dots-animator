@@ -1951,37 +1951,27 @@
         </div>
       </div> -->
 
-        <div
-          class="video-container mx-auto d-flex justify-content-center align-items-center py-5 position-relative z_index5"
-        >
-          <div
-            class="ipad_video_border rounded-4 sm:my-5 position-relative z_index2 video_border"
-          >
+      <section class="position-relative py-md-5" style="overflow: hidden">
+        <div class="video-container mx-auto d-flex justify-content-center align-items-center py-5 position-relative z_index5">
+          <div class="ipad_video_border rounded-4 sm:my-5 position-relative z_index2 video_border">
             <div class="video-frame">
               <div class="iframe-container">
-                <iframe
-                  id="player"
-                  frameborder="0"
-                  allowfullscreen
+                <iframe id="player" frameborder="0" allowfullscreen 
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  title="D Dots - Where security meets freedom"
+                  referrerpolicy="strict-origin-when-cross-origin" title="D Dots - Where security meets freedom"
                   src="https://www.youtube.com/embed/2Vggxts5Dak?modestbranding=1&rel=0&iv_load_policy=3&showinfo=0&enablejsapi=1&origin=http%3A%2F%2F127.0.0.1%3A5500&widgetid=1"
-                  class="custom-border rounded-frame"
-                ></iframe>
+                  class="custom-border rounded-frame"></iframe>
               </div>
             </div>
-            <div class="custom-controls" id="playVideo">
+            <div class="custom-controls">
               <button id="changeVideoBtn" class="custom-button">
-                <img
-                  src="https://img.icons8.com/ios-filled/50/ffffff/language.png"
-                  alt="Change Language"
-                />
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/language.png" alt="Change Language">
               </button>
             </div>
           </div>
         </div>
-
+      </section>      
+    
         <!-- BACKGROUND TOP SHADOW LARGE HEIGHT  -->
         <!-- BACKGROUND TOP SHADOW SMALL HEIGHT  -->
         <!-- BACKGROUND BOTTOM SHADOW LARGE HEIGHT  -->
@@ -3769,34 +3759,16 @@
     const videos = {
       espanol: '-t16djg0r3Y',
       ingles: '2Vggxts5Dak'
-    }
-
-    let currentVideo = 'ingles'
-    let player
-    let isPlaying = false
-
+    };
+  
+    let currentVideo = 'ingles';
+    let player;
+    let isPlaying = false;
+  
     function changeVideo(videoId) {
-      player.loadVideoById(videoId)
+      player.loadVideoById(videoId);
     }
-
-    function playPauseVideo() {
-      if (isPlaying) {
-        player.pauseVideo()
-        document.getElementById('playPauseIcon').src =
-          'https://img.icons8.com/ios-filled/50/ffffff/play.png'
-      } else {
-        player.playVideo()
-        document.getElementById('playPauseIcon').src =
-          'https://img.icons8.com/ios-filled/50/ffffff/pause.png'
-      }
-      isPlaying = !isPlaying
-    }
-
-    var tag = document.createElement('script')
-    tag.src = 'https://www.youtube.com/iframe_api'
-    var firstScriptTag = document.getElementsByTagName('script')[0]
-    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag)
-
+  
     function onYouTubeIframeAPIReady() {
       player = new YT.Player('player', {
         height: '534',
@@ -3812,38 +3784,46 @@
           onReady: onPlayerReady,
           onStateChange: onPlayerStateChange
         }
-      })
+      });
     }
-
+  
     function onPlayerReady(event) {
-      isPlaying = false
+      isPlaying = false;
     }
-
+  
     function onPlayerStateChange(event) {
       if (event.data == YT.PlayerState.ENDED) {
-        isPlaying = false
+        isPlaying = false;
       } else if (event.data == YT.PlayerState.PLAYING) {
-        isPlaying = true
+        isPlaying = true;
       } else if (event.data == YT.PlayerState.PAUSED) {
-        isPlaying = false
+        isPlaying = false;
       }
     }
-
-    document.getElementById('changeVideoBtn').addEventListener('click', () => {
-      if (currentVideo === 'espanol') {
-        currentVideo = 'ingles'
-      } else {
-        currentVideo = 'espanol'
-      }
-      changeVideo(videos[currentVideo])
-    })
-
-    document.getElementById('playVideo').addEventListener('click', () => {
-      player.playVideo()
-      isPlaying = true
-      document.getElementById('playVideo').style.display = 'none'
-    })
+  
+    document.addEventListener('DOMContentLoaded', () => {
+      document.getElementById('changeVideoBtn').addEventListener('click', () => {
+        if (currentVideo === 'espanol') {
+          currentVideo = 'ingles';
+        } else {
+          currentVideo = 'espanol';
+        }
+        changeVideo(videos[currentVideo]);
+      });
+  
+      document.getElementById('playVideo').addEventListener('click', () => {
+        player.playVideo();
+        isPlaying = true;
+        document.getElementById('playVideo').style.display = 'none';
+      });
+    });
+  
+    var tag = document.createElement('script');
+    tag.src = 'https://www.youtube.com/iframe_api';
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
   </script>
+  
   <!-- Fix back to top logic -->
   <script>
     document.addEventListener('DOMContentLoaded', function () {
