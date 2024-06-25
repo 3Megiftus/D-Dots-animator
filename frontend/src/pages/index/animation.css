@@ -71,7 +71,7 @@ svg path {
   width: 320px;
   height: 220px;
   border-right: 2px solid #fafafa;
-  border-bottom: 2px solid #fafafa;
+  border-bottom: 2px solid #ed0d0d;
   z-index: -1;
   border-bottom-right-radius: 24px;
 }
