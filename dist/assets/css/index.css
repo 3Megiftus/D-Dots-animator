@@ -4458,7 +4458,8 @@ span div {
 .devonlane {
     height: 72px;
     margin-bottom: 14px;
-    width: 72px
+    width: 72px;
+    border-radius:100%;
 }
 
 .ieee_para_width {
